@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's x Jujutsu Kaisen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f2;
+        }
+
+        header {
+            background-color: #ffcc00;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 3px solid #e63946;
+        }
+
+        header .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #e63946;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ee2424;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 20px 10px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            color: #fffafb;
+            border-bottom: 3px solid #e63946;
+        }
+
+        .search-bar {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .hero {
+            background-image: url('banners-2.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            background-blur: 5px;
+            background-position: center;
+            border-bottom: 3px solid #e63946;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #e63946;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #d32f2f;
+        }
+
+        .features {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .features h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            display: inline-block;
+            width: 30%;
+            margin: 20px 1.5%;
+            vertical-align: top;
+        }
+
+        .feature img {
+            width: 80px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .feature h3 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .feature p {
+            font-size: 16px;
+        }
+
+        .menu {
+            margin: 50px auto;
+            max-width: 800px;
+        }
+
+        .menu-item {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-item img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        .menu-item h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .menu-item p {
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #cf240a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-top: 3px solid #e63946;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .logo-text {
+             font-size: 24px; 
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .hero {
+                padding: 50px 10px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .feature {
+                width: 90%;
+                margin: 20px 5%;
+            }
+
+            .menu-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .menu-item img {
+                margin-bottom: 10px;
+                margin-right: 0;
+                width: 100%;
+            }
+
+            .menu-item h2 {
+                font-size: 20px;
+            }
+
+            .menu-item p {
+                font-size: 14px;
+            }
+        }
+         header {
+         display: flex;
+         align-items: center;
+        }
+
+        .logo-image {
+        width: 100px;
+        height: auto;
+        margin-right: 15px;
+        background-color: #d32f2f;
+        margin-left: 00px;
+        }
+
+        .logo-text {
+        font-size: 32px;
+        font-weight: bold;
+        color: #e63946;
+        align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="oq-removebg-preview.png" alt="McDonald's Logo" class="logo-image">
+    <div class="logo-text">McDonald's x Jujutsu Kaisen</div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('about')">About Us</a></li>
+            <li><a href="#" onclick="showPage('menu')">Happy Meal Menu</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+    </div>
+    <main id="content">
+        <!-- Home Page Content -->
+        <section id="home">
+            <div class="hero">
+                <h1>Welcome to McDonald's x Jujutsu Kaisen</h1>
+                <p>Experience the ultimate crossover with exclusive Jujutsu Kaisen Happy Meals!</p>
+                <a href="#" onclick="showPage('menu')" class="cta-button">View Happy Meal Menu</a>
+            </div>
+            <section class="features">
+                <h2>Exclusive Offers</h2>
+                <div class="feature">
+                    <img src="24-removebg-preview.png" alt="Limited Edition Toys">
+                    <h3>Limited Edition Toys</h3>
+                    <p>Collect unique Jujutsu Kaisen toys with every Happy Meal.</p>
+                </div>
+                <div class="feature">
+                    <img src="24-removebg-preview (1).png" alt="Themed Meals">
+                    <h3>Themed Meals</h3>
+                    <p>Enjoy special themed meals inspired by your favorite characters.</p>
+                </div>
+                <div class="feature">
+                    <img src="23-removebg-preview.png" alt="Anime Merch">
+                    <h3>Anime Merch</h3>
+                    <p>Get exclusive Jujutsu Kaisen merchandise with your meal.</p>
+                </div>
+            </section>
+        </section>
+
+        <!-- About Us Page Content -->
+        <section id="about" style="display: none;">
+            <h1>About Us</h1>
+            <p>Welcome to McDonald's, where we bring you the best food experience combined with your favorite anime, Jujutsu Kaisen! Our mission is to provide delicious meals and exciting merchandise to our beloved customers. Join us in this exclusive crossover and enjoy the magic of Jujutsu Kaisen with every bite.</p>
+        </section>
+
+        <!-- Menu Page Content -->
+        <section id="menu" style="display: none;">
+            <h1>Happy Meal Menu</h1>
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="images__1_-removebg-preview.png" alt="Gojou's Special Combo">
+                    <div>
+                        <h2>Gojou's Special Combo</h2>
+                        <p>Enjoy a burger, fries, and a drink, plus a limited edition Gojou toy.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images-removebg-preview.png" alt="Itadori's Ultimate Feast">
+                    <div>
+                        <h2>Itadori's Ultimate Feast</h2>
+                        <p>A hearty meal with nuggets, fries, and a drink, including an Itadori toy.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="image3.jpg" alt="Fushiguro's Delight">
+                    <div>
+                        <h2>Fushiguro's Delight</h2>
+                        <p>A delicious meal featuring chicken sandwiches and fries with a Fushiguro toy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Page Content -->
+        <section id="contact" style="display: none;">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or feedback, we'd love to hear from you! Please reach out to us at:</p>
+            <p>Email: support@mcdonalds.com</p>
+            <p>Phone: 1-800-MCD-HELP</p>
+            <p>Address: 123 McDonald's Lane, Foodville, USA</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 McDonald's Corporation. All rights reserved.</p>
+    </footer>
+    <script>
+         function showPage(pageId) {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('menu').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+            document.getElementById(pageId).style.display = 'block';
+       }
+      
+        showPage('home');   
+    </script>
+</body>
+</html>
